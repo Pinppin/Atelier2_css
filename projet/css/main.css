@@ -1,0 +1,281 @@
+
+/* Quelque règle générique */
+
+body{
+  font-size: 12px ;
+  font-family: arial ;
+  background-color: white ;
+}
+
+/* L'entête */
+
+header.entete_page{
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header.entete_page h1{
+  font-size: large;
+  margin: 0 10px 0 10px;
+  display: inline-block;
+}
+
+header.entete_page ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header.entete_page ul li{
+  width: 150px;
+}
+
+header.entete_page ul li a{
+  text-decoration: none;
+  width: 150px;
+  color: red;
+}
+
+header.entete_page ul li a:hover {
+  color: #6B6B6B;
+}
+
+
+/* le corps */
+main{
+  display: flex;
+}
+main article.article_acceuil{
+  width: 70%;
+  padding:10px;
+  position: relative;
+}
+
+main article.article_acceuil h2{
+  text-transform: uppercase;
+}
+
+main article.article_acceuil img{
+  text-align: left;
+  width: 30%;
+  display: inline;
+}
+
+main article.article_acceuil p{
+  display:inline-block;
+  text-align: left;
+  position: absolute;
+}
+
+main article.article_acceuil a{
+  text-decoration: none;
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main article.article_acceuil a:hover{
+  text-decoration:underline;
+}
+
+main aside.aside_acceuil{
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #B6B6B6;
+  border-radius: 10px;
+}
+
+main aside.aside_acceuil ul li ul li{
+  margin: 5px;
+  color: black;
+}
+
+main aside.aside_acceuil ul li ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+main aside.aside_acceuil ul li ul li a:hover{
+  text-decoration: underline;
+}
+
+/* Le pied de page */
+
+footer{
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  box-shadow: 10px -5px 5px grey ;
+  padding: 10px;
+}
+
+footer a{
+  color: #B6B6B6;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer ul.Contact{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+
+/* transition */
+
+header.entete_page ul li a{
+  transition: color 0.5s linear 0s;
+}
+
+main aside.aside_acceuil ul li ul li a:hover{
+  text-decoration: none;
+  color: green;
+  transition: color 0.5s linear 0s;
+}
+
+footer ul.Contact li{
+  transition: font-size 0.5s linear 0s;
+}
+
+footer ul.Contact li:hover{
+  font-size: 16px;
+  transition: font-size 0.5s linear 0s;
+}
+
+
+/* Animation */
+
+header.entete_page, footer{
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+main article.article_acceuil{
+  animation-name: article;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+main aside.aside_acceuil{
+  animation-name: aside;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+main article.article_acceuil a:hover{
+  animation-name: secouer;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+footer ul li.partenaire:hover{
+  animation-name: couleur;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+
+}
+
+
+@keyframes fade{
+  from {
+    opacity: 0;
+  }
+  to{opacity: 1;}
+}
+
+@keyframes article {
+  0%{transform: translateX(-500px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes aside {
+  0%{transform: translateX(500px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes secouer {
+  0%{transform: translateX(0px);}
+  25%{transform: translateX(-10px);}
+  50%{transform: translateX(10px);}
+  75%{transform: translateX(-10px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes couleur{
+  0%{color: red;}
+  25%{color: green;}
+  50%{color: blue;}
+  75%{color: green;}
+  100%{color: red;}
+}
+
+
+/* Version tablette */
+
+@media screen and (min-width:630px) and (max-width:768px){
+
+  main article.article_acceuil{
+    width: 100%;
+    padding:10px;
+    position: relative;
+  }
+
+  main article.article_acceuil h2{
+    text-transform: uppercase;
+  }
+
+  main article.article_acceuil img{
+    text-align: left;
+    width: 30%;
+    display: inline;
+  }
+
+  main article.article_acceuil a{
+    text-decoration: none;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  main article.article_acceuil a:hover{
+    text-decoration:underline;
+  }
+
+  main aside.aside_acceuil{
+    width: 30%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #B6B6B6;
+    border-radius: 10px;
+  }
+
+  main aside.aside_acceuil ul li ul li{
+    margin: 5px;
+    color: black;
+  }
+
+  main aside.aside_acceuil ul li ul li a{
+    color: black;
+    text-decoration: none;
+  }
+
+  main aside.aside_acceuil ul li ul li a:hover{
+    text-decoration: underline;
+  }
+}

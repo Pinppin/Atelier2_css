@@ -1,0 +1,98 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #23364B;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #F36428 ;
+}
+
+/* contenue caché par défaults */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9AAAB7;
+  width: 98.95%;
+  left: 8px;
+  z-index: 1;
+}
+
+/* en-tête du mega menu */
+.dropdown-content .header {
+  background: #365670;
+  padding: 10px;
+  color: white;
+}
+
+/* voir le menu lors du passage sur le bouton mega menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Espacement entre les collones */
+.column {
+  float:left;
+  padding:12px;
+  background-color: #9AAAB7;
+  height: 250px;
+  font-size: 16px;
+}
+
+/* style des liens des collones */
+.column a{
+  float: none;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+/* Ajoute une couleur au fond lors du passage de la souris */
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 40px;
+}
+
+.voir_plus{
+  background-color: #2987C5;
+}

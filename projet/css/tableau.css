@@ -1,0 +1,104 @@
+body{
+  background-color: black;
+}
+
+body ul.principal,ul.secondaire{
+  text-align: center;
+}
+
+body ul a{
+  text-decoration: none;
+  color: black;
+}
+
+
+body ul.principal{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 85%;
+}
+
+body li{
+  width: 40px;
+  height: 40px;
+  margin:5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.black{
+  background-color: black;
+}
+
+.vert_clair{
+  background-color: #91ff89 ;
+}
+
+.vert{
+  background-color: #55ed44 ;
+}
+
+.bleu_foncer{
+  background-color:#4562cc ;
+}
+
+.lavande{
+  background-color:#96abff ;
+}
+
+.jaune{
+  background-color: #e0e02c ;
+}
+
+.orange{
+  background-color:#ef853e ;
+}
+
+.orange_foncer{
+  background-color:#cc5800 ;
+}
+
+.gris_clair{
+  background-color:#d3d3d3 ;
+}
+
+body ul.secondaire{
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+
+.rose{
+  background-color:#ff91e7;
+}
+
+body ul.legende li{
+  list-style: none;
+  background-color: black;
+  color: white;
+  width: auto;
+  padding: 0 30px 0 0;
+  font-size: 16px;
+}
+
+body ul.legende{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body ul.legende li span{
+  width: 10px;
+  height: 10px;
+}
+
+body ul li.survol:hover{
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  transition: all 1s;
+}
