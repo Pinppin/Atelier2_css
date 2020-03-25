@@ -1,3 +1,7 @@
+ul{
+  list-style: none;
+}
+
 /* Barre de anvigation */
 .barre_navigation {
   overflow: hidden;
@@ -17,30 +21,30 @@
 
 
 /* ici les configuration pour descendre le bandeau caché */
-.dropdown {
+.barre_descendante {
   float: left;
   overflow: hidden;
 }
 
 /* Bouton de descente du bandeau caché */
-.dropdown .dropbtn {
+.barre_descendante .bouton {
   font-size: 16px;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font: inherit;
+  margin: 0;
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+/*ajouter un fond de couleur */
+.barre_navigation a:hover, .barre_descendante:hover .bouton {
   background-color: #F36428 ;
 }
 
 /* contenue caché par défaults */
-.dropdown-content {
+.bandeau_contenue {
   /*display: none;*/
   position: absolute;
   background-color: #9AAAB7;
@@ -50,7 +54,7 @@
 }
 
 /* en-tête du mega menu */
-.dropdown-content .header {
+.bandeau_contenue .header {
   background: #365670;
   padding: 10px;
   font-size: 14px;
@@ -60,12 +64,12 @@
 }
 
 /* voir le menu lors du passage sur le bouton mega menu */
-.dropdown:hover .dropdown-content {
+.barre_descendante:hover .bandeau_contenue {
   display: block;
 }
 
 /* Espacement entre les collones */
-.column {
+.colonne {
   display: flex;
   float:left;
   padding:12px 45px 12px 12px;
@@ -73,11 +77,11 @@
   height: 250px;
   font-size: 16px;
   flex-direction: column;
-  align-items:;
+  align-items: flex-end;
 }
 
 /* style des liens des collones */
-.column a{
+.colonne a{
   float: none;
   color: black;
   padding: 14px;
@@ -88,12 +92,12 @@
 }
 
 /* Ajoute une couleur au fond lors du passage de la souris */
-.column a:hover {
+.colonne a:hover {
   background-color: #9AAAB7;
 }
 
-/* Clear floats after the columns */
-.row:after {
+/* réinisialiser le float ici */
+.reinistialisation:after {
   content: "";
   display: table;
   clear: both;
@@ -152,6 +156,8 @@
 
 /* Espacement entre les collones */
 .colonne_blog {
+  display: flex;
+  flex-direction: column;
   float:left;
   width: 31%;
   padding:12px;
@@ -196,7 +202,7 @@
 
 
 /* BANDEAU IMAGE --------------------------------------------------------------------------------------------------------- */
-/* Barre descendante du blog */
+/* Barre descendante de l'image */
 .barre_descendante_image {
   float: left;
   overflow: hidden;
@@ -244,6 +250,8 @@
 /* Espacement entre les collones */
 .colonne_image {
   float:left;
+  display: flex;
+  flex-direction: column;
   width: 23%;
   padding:12px;
   background-color: #9AAAB7;
