@@ -1,12 +1,12 @@
-/* Navbar container */
-.navbar {
+/* Barre de anvigation */
+.barre_navigation {
   overflow: hidden;
   background-color: #23364B;
   font-family: Arial;
 }
 
-/* Links inside the navbar */
-.navbar a {
+/* lien dans la barre de navigation */
+.barre_navigation a {
   float: left;
   font-size: 16px;
   color: white;
@@ -15,13 +15,14 @@
   text-decoration: none;
 }
 
-/* The dropdown container */
+
+/* ici les configuration pour descendre le bandeau caché */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Dropdown button */
+/* Bouton de descente du bandeau caché */
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -40,7 +41,7 @@
 
 /* contenue caché par défaults */
 .dropdown-content {
-  display: none;
+  /*display: none;*/
   position: absolute;
   background-color: #9AAAB7;
   width: 98.95%;
@@ -52,7 +53,10 @@
 .dropdown-content .header {
   background: #365670;
   padding: 10px;
+  font-size: 14px;
   color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* voir le menu lors du passage sur le bouton mega menu */
@@ -62,11 +66,14 @@
 
 /* Espacement entre les collones */
 .column {
+  display: flex;
   float:left;
-  padding:12px;
+  padding:12px 45px 12px 12px;
   background-color: #9AAAB7;
   height: 250px;
   font-size: 16px;
+  flex-direction: column;
+  align-items:;
 }
 
 /* style des liens des collones */
@@ -82,7 +89,7 @@
 
 /* Ajoute une couleur au fond lors du passage de la souris */
 .column a:hover {
-  background-color: #ddd;
+  background-color: #9AAAB7;
 }
 
 /* Clear floats after the columns */
@@ -93,6 +100,186 @@
   padding: 40px;
 }
 
-.voir_plus{
+.voir_plus_mega{
   background-color: #2987C5;
+}
+
+/* BANDEAU Blog --------------------------------------------------------------------------------------------------------- */
+/* Barre descendante du blog */
+.barre_descendante_blog {
+  float: left;
+  overflow: hidden;
+}
+
+/* Bouton de descente du bandeau caché */
+.barre_descendante_blog .bouton_blog {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* ajoute un backgroud color a la barre de navigation*/
+.barre_navigation a:hover, .barre_descendante_blog:hover .bouton_blog {
+  background-color: #F36428 ;
+}
+
+/* contenue caché par défaults */
+.bandeau_contenue_blog {
+  display: none;
+  position: absolute;
+  background-color: #9AAAB7;
+  width: 98.95%;
+  left: 8px;
+  z-index: 1;
+}
+
+/* en-tête du mega menu */
+.bandeau_contenue_blog .header {
+  background: #365670;
+  padding: 10px;
+  color: white;
+}
+
+/* voir le menu lors du passage sur le bouton mega menu */
+.barre_descendante_blog:hover .bandeau_contenue_blog {
+  display: block;
+}
+
+/* Espacement entre les collones */
+.colonne_blog {
+  float:left;
+  width: 31%;
+  padding:12px;
+  background-color: #9AAAB7;
+  height: 550px;
+  font-size: 16px;
+}
+
+/* style des liens des collones */
+.colonne_blog a{
+  float: none;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+/*  style des paragraphe dans l'acceuil*/
+.colonne_blog p{
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+.bandeau_cacher_blog {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 40px;
+}
+
+.voir_plus_blog{
+  background-color: #2987C5;
+  width: 20%;
+}
+
+
+/* BANDEAU IMAGE --------------------------------------------------------------------------------------------------------- */
+/* Barre descendante du blog */
+.barre_descendante_image {
+  float: left;
+  overflow: hidden;
+}
+
+/* Bouton de descente du bandeau caché */
+.barre_descendante_image .bouton_image {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* ajoute un backgroud color a la barre de navigation*/
+.barre_navigation a:hover, .barre_descendante_image:hover .bouton_image{
+  background-color: #F36428 ;
+}
+
+/* contenue caché par défaults */
+.bandeau_contenue_image {
+  display: none;
+  position: absolute;
+  background-color: #9AAAB7;
+  width: 98.95%;
+  left: 8px;
+  z-index: 1;
+}
+
+/* en-tête du mega menu */
+.bandeau_contenue_image .header {
+  background: #365670;
+  padding: 10px;
+  color: white;
+}
+
+/* voir le menu lors du passage sur le bouton mega menu */
+.barre_descendante_image:hover .bandeau_contenue_image {
+  display: block;
+}
+
+/* Espacement entre les collones */
+.colonne_image {
+  float:left;
+  width: 23%;
+  padding:12px;
+  background-color: #9AAAB7;
+  height: 250px;
+  font-size: 16px;
+}
+
+.colonne_image img{
+  width: 100%;
+}
+
+/* style des liens des collones */
+.colonne_image a{
+  float: none;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+/*  style des paragraphe dans l'acceuil*/
+.colonne_image p{
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+.bandeau_cacher_image {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 40px;
 }
