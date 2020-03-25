@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <title>Megamenu</title>
@@ -9,43 +9,44 @@
     <link rel="stylesheet" href="megamenu.css">
   </head>
   <body>
-    <div class="navbar">
-      <a href="#acceuil">Acceuil</a>
+    <div class="barre_navigation">
+      <a href="#Acceuil">Acceuil</a>
       <a href="#Sous-menus">Sous-menu</a>
       <a href="#Service">Services</a>
       <a href="#portfolio">Portfolio</a>
+
+      <!-- Mega menu -->
       <div class="dropdown">
         <button class="dropbtn">Mega-Menu
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <div class="header">
-            <h2>Mega Menu</h2>
+            <h3>Fonctionnalités</h3>
+            <h3>Catégories</h3>
+            <h3>Description</h3>
+            <h3>Icon + Description</h3>
           </div>
           <div class="row">
             <div class="column column_un">
-              <h3>Fonctionnalités</h3>
               <img class="image_megamenu" src="../img/htmlcss.jpg" alt="image de html et css">
             </div>
             <div class="column">
-              <h3>Catégories</h3>
               <a href="#">HTML</a>
               <a href="#">CSS</a>
               <a href="#">Javascript</a>
               <a href="#">PHP</a>
               <a href="#">SQL</a>
-              <a class="voir_plus" href="#">Voir plus ...</a>
+              <a class="voir_plus_mega" href="#">Voir plus ...</a>
             </div>
             <div class="column">
-              <h3>DESCRIPTION</h3>
               <a href="#">HTML</a>
               <a href="#">CSS</a>
               <a href="#">Javascript</a>
               <a href="#">Autres</a>
-              <a class="voir_plus" href="#">Voir plus ...</a>
+              <a class="voir_plus_mega" href="#">Voir plus ...</a>
             </div>
             <div class="column">
-              <h3>ICON + DESCRIPTION</h3>
               <a href="#">Web</a>
               <a href="#">Mobile</a>
               <a href="#">Responsive</a>
@@ -55,9 +56,61 @@
           </div>
         </div>
       </div>
-      <a href="#Blog">BLOG</a>
-      <a href="#Images">IMAGES</a>
-      <a href="#Contact">CONTACT</a>
+      <!--Blog  -->
+      <div class="barre_descendante_blog">
+        <button class="bouton_blog">Blog
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="bandeau_contenue_blog">
+          <div class="bandeau-cacher_blog">
+            <div class="colonne_blog">
+              <img src="../img/html.jpg" alt="photo de html">
+              <h3>Lorem ipsum Dolor Sit Amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="voir_plus_blog" href="#">Voir plus ...</a>
+            </div>
+            <div class="colonne_blog">
+              <img src="../img/css.jpg" alt="photo de css">
+              <h3>Lorem ipsum Dolor Sit Amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="voir_plus_blog" href="#">Voir plus ...</a>
+            </div>
+            <div class="colonne_blog">
+              <img src="../img/js.jpg" alt="photo de js">
+              <h3>Lorem ipsum Dolor Sit Amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="voir_plus_blog" href="#">Voir plus ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--image  -->
+      <div class="barre_descendante_image">
+        <button class="bouton_image">Images
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="bandeau_contenue_image">
+          <div class="bandeau-cacher_image">
+            <div class="colonne_image">
+              <h3>HTML 5</h3>
+              <img src="../img/html.jpg" alt="photo de html">
+            </div>
+            <div class="colonne_image">
+              <h3>CSS 3</h3>
+              <img src="../img/css.jpg" alt="photo de css">
+            </div>
+            <div class="colonne_image">
+              <h3>Javascript es 6</h3>
+              <img src="../img/js.jpg" alt="photo de js">
+            </div>
+            <div class="colonne_image">
+              <h3>php 7</h3>
+              <img src="../img/php.jpg" alt="photo de php">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#Contact">Contact</a>
     </div>
   </body>
 </html>
